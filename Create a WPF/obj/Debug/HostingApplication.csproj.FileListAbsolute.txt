@@ -1,0 +1,15 @@
+D:\WBF\Workflow\Create a WPF\Create a WPF\bin\Debug\Create a WPF.exe.config
+D:\WBF\Workflow\Create a WPF\Create a WPF\bin\Debug\Create a WPF.exe
+D:\WBF\Workflow\Create a WPF\Create a WPF\bin\Debug\Create a WPF.pdb
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\HostingApplication.csproj.AssemblyReference.cache
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\MainWindow.g.cs
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\App.g.cs
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create a WPF_MarkupCompile.cache
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create a WPF_MarkupCompile.lref
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\MainWindow.baml
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create a WPF.g.resources
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create_a_WPF.Properties.Resources.resources
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\HostingApplication.csproj.GenerateResource.cache
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\HostingApplication.csproj.CoreCompileInputs.cache
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create a WPF.exe
+D:\WBF\Workflow\Create a WPF\Create a WPF\obj\Debug\Create a WPF.pdb
