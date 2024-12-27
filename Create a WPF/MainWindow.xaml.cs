@@ -1,33 +1,28 @@
-﻿using System.Windows;
+﻿using System;
 using System.Activities;
 using System.Activities.Core.Presentation;
 using System.Activities.Presentation;
-using System.Activities.Presentation.Metadata;
 using System.Activities.Presentation.Toolbox;
 using System.Activities.Statements;
-using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
-using System;
+using System.Windows.Controls.Ribbon;
+
+
 namespace Create_a_WPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private WorkflowDesigner wd;
-
-
         public MainWindow()
         {
             InitializeComponent();
-            // Register the metadata.
             RegisterMetadata();
             AddDesigner();
             AddToolBox();
-
             AddPropertyInspector();
         }
+  
         private void AddDesigner()
         {
             // Create an instance of WorkflowDesigner class.
@@ -35,15 +30,11 @@ namespace Create_a_WPF
 
             // Place the designer canvas in the middle column of the grid.
             Grid.SetColumn(wd.View, 1);
-
-
-            
-
+            Grid.SetRow(wd.View, 1);
             // Load a new Sequence as default.
             wd.Load(new Sequence());
-
-            // Add the designer canvas to the grid.
             grid1.Children.Add(wd.View);
+            
         }
         private void RegisterMetadata()
         {
@@ -160,14 +151,41 @@ namespace Create_a_WPF
         {
             ToolboxControl tc = GetToolboxControlFlow();
             Grid.SetColumn(tc, 0);
+            Grid.SetRow(tc, 1);
             grid1.Children.Add(tc);
         }
 
         private void AddPropertyInspector()
         {
             Grid.SetColumn(wd.PropertyInspectorView, 2);
+            Grid.SetRow(wd.PropertyInspectorView, 1);
             grid1.Children.Add(wd.PropertyInspectorView);
         }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            // Tạo một StringWriter để thu thập kết quả
+            var stringWriter = new System.IO.StringWriter();
+            var oldOut = Console.Out;
+
+            // Chuyển hướng Console.Out đến StringWriter
+            Console.SetOut(stringWriter);
+
+            // Lưu Workflow từ WorkflowDesigner
+            wd.Flush();
+            string xamlText = wd.Text;
+            // Nạp Workflow từ XAML
+            Activity workflow = System.Activities.XamlIntegration.ActivityXamlServices.Load(new System.IO.StringReader(xamlText));
+
+            // Chạy Workflow đồng bộ
+            WorkflowInvoker.Invoke(workflow);
+
+            // Hiển thị kết quả từ WriteLine
+            string output = stringWriter.ToString();
+            rtxtOutput.AppendText(DateTime.Now.ToString("dd/MM/yyyy") + "[Output]: " + output);
+
+        }
+
 
     }
 }

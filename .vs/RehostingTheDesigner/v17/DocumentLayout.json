@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{CE88AD94-DF5E-4B33-A5DC-93DC6A58359D}|Create a WPF\\HostingApplication.csproj|solutionrelative:create a wpf\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE88AD94-DF5E-4B33-A5DC-93DC6A58359D}|Create a WPF\\HostingApplication.csproj|d:\\wbf\\workflow\\create a wpf\\create a wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CE88AD94-DF5E-4B33-A5DC-93DC6A58359D}|Create a WPF\\HostingApplication.csproj|D:\\WBF\\Workflow\\Create a WPF\\create a wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CE88AD94-DF5E-4B33-A5DC-93DC6A58359D}|Create a WPF\\HostingApplication.csproj|solutionrelative:create a wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\WBF\\Workflow\\Create a WPF\\Create a WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Create a WPF\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\WBF\\Workflow\\Create a WPF\\Create a WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Create a WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAIwDEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T04:49:15.322Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -42,7 +29,19 @@
               "ToolTip": "D:\\WBF\\Workflow\\Create a WPF\\Create a WPF\\MainWindow.xaml",
               "RelativeToolTip": "Create a WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-26T04:49:09.213Z",
+              "WhenOpened": "2024-12-26T04:49:09.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WBF\\Workflow\\Create a WPF\\Create a WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Create a WPF\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\WBF\\Workflow\\Create a WPF\\Create a WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Create a WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAmwKwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T04:49:15.322Z",
               "EditorCaption": ""
             }
           ]
