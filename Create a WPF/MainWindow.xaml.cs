@@ -7,6 +7,8 @@ using System.Activities.Statements;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Ribbon;
+using System.IO;
+using System.Collections.Generic;
 
 
 namespace Create_a_WPF
@@ -165,27 +167,23 @@ namespace Create_a_WPF
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             // Tạo một StringWriter để thu thập kết quả
-            var stringWriter = new System.IO.StringWriter();
+            var stringWriter = new StringWriter();
             var oldOut = Console.Out;
-
             // Chuyển hướng Console.Out đến StringWriter
             Console.SetOut(stringWriter);
-
             // Lưu Workflow từ WorkflowDesigner
             wd.Flush();
             string xamlText = wd.Text;
             // Nạp Workflow từ XAML
             Activity workflow = System.Activities.XamlIntegration.ActivityXamlServices.Load(new System.IO.StringReader(xamlText));
-
             // Chạy Workflow đồng bộ
             WorkflowInvoker.Invoke(workflow);
-
             // Hiển thị kết quả từ WriteLine
             string output = stringWriter.ToString();
-            rtxtOutput.AppendText(DateTime.Now.ToString("dd/MM/yyyy") + "[Output]: " + output);
-
+            txtOutput.AppendText(DateTime.Now.ToString("dd/MM/yyyy") + "[Output]: " + output);
         }
 
+      
 
     }
 }
